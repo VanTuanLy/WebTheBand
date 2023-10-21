@@ -23,7 +23,7 @@ html{
 */
 
 #main{
-    
+
 }
 
 #header{
@@ -37,6 +37,7 @@ html{
 
 #nav li{
     display: inline-block;
+    position: relative;
 }
 
 #nav li a{
@@ -47,18 +48,29 @@ html{
     display: inline-block;
 }
 
-#nav li:hover a{
+#nav > li:hover >a{
     color: black;
     background-color: white;
 }
 
 
 #nav .subnav{
-    display: none;
+    /*display: none;*/
+    position:absolute;
+    background-color: white;
+}
+
+#nav .subnav a{
+    color: black;
 }
 
 #slider{
+    min-height: 500px;
+    background-color: gray;
+}
 
+#content{
+    
 }
 
 #footer{
